@@ -26,7 +26,7 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/To-Do-Task.git cd To-Do-Task
+    git clone https://github.com/alfargenis/To-Do-Task.git cd To-Do-Task
     ```
 2.  **Install the dependencies**
 
