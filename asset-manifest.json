@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/alfargenis/To-Do-Task/static/css/main.faed27b9.css",
-    "main.js": "/alfargenis/To-Do-Task/static/js/main.4a11717e.js",
-    "index.html": "/alfargenis/To-Do-Task/index.html",
-    "main.faed27b9.css.map": "/alfargenis/To-Do-Task/static/css/main.faed27b9.css.map",
-    "main.4a11717e.js.map": "/alfargenis/To-Do-Task/static/js/main.4a11717e.js.map"
+    "main.css": "/To-Do-Task/static/css/main.faed27b9.css",
+    "main.js": "/To-Do-Task/static/js/main.4a11717e.js",
+    "index.html": "/To-Do-Task/index.html",
+    "main.faed27b9.css.map": "/To-Do-Task/static/css/main.faed27b9.css.map",
+    "main.4a11717e.js.map": "/To-Do-Task/static/js/main.4a11717e.js.map"
   },
   "entrypoints": [
     "static/css/main.faed27b9.css",
