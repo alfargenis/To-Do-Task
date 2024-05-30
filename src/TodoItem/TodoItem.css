@@ -1,0 +1,64 @@
+.TodoItem {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 450px;
+  word-wrap: break-word; /* This will break long words to fit within the container */
+  overflow: hidden; /* This ensures the content stays within the container */
+  position: relative; /* Added for positioning the delete icon */
+}
+
+.TodoItem:hover {
+  background-color: #f9f9f9;
+}
+
+.TodoItem.completed {
+  background-color: rgb(139, 214, 105);
+}
+
+.TodoText {
+  flex-grow: 1;
+  max-width: 450px;
+  overflow: hidden; /* Prevents overflow of text */
+  word-wrap: break-word; /* Breaks long words to fit within the container */
+}
+
+.TodoText.completed {
+  text-decoration: line-through;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.Icon-delete {
+  position: relative; /* Positioned absolutely within the relative container */
+  right: -10px; /* Moves the icon to the right */
+  top: 50%; /* Centers the icon vertically */
+  transform: translateY(-50%);
+}
+
+.Icon-delete::before {
+  content: "✖️"; /* Initial icon */
+}
+
+.Icon-delete:hover::before {
+  content: "❌"; /* Change the icon on hover */
+  color: red; /* Add this if you want to change the color as well */
+}

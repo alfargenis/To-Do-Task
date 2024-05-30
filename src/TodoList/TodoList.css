@@ -1,0 +1,8 @@
+/* TodoList Styles */
+.TodoList {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+  margin-bottom: 30px;
+  flex: 1;
+}

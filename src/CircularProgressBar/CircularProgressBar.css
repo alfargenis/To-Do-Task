@@ -1,0 +1,7 @@
+/* Circular Progress Bar */
+.CircularProgressBar {
+  position: flex;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
