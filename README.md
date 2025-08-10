@@ -2,8 +2,6 @@
 
 A modern, feature-rich task management application built with React that helps you organize your daily tasks with intelligent features and beautiful UI.
 
-![To Do Task App](https://github.com/user-attachments/assets/acf31587-7ea1-4ff5-87c8-782fc14a33de)
-
 ## ✨ Features
 
 ### 🎯 Core Task Management
