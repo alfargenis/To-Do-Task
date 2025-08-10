@@ -1,0 +1,19 @@
+.TodoDate {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 4px;
+}
+
+.TodoDate-text {
+  font-size: 0.75rem;
+  color: #6c757d;
+  font-weight: 400;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Hover effect para mostrar más información */
+.TodoDate:hover .TodoDate-text {
+  opacity: 1;
+  color: #495057;
+}

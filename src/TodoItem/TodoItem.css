@@ -9,7 +9,7 @@
   justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   max-width: 450px;
   word-wrap: break-word; /* This will break long words to fit within the container */
   overflow: hidden; /* This ensures the content stays within the container */
@@ -22,6 +22,85 @@
 
 .TodoItem.completed {
   background-color: rgb(139, 214, 105);
+}
+
+/* Degradado de colores basado en el tiempo */
+.TodoItem.urgent {
+  background-color: #ffebee;
+  border-color: #ffcdd2;
+}
+
+.TodoItem.urgent:hover {
+  background-color: #ffcdd2;
+}
+
+.TodoItem.very-urgent {
+  background-color: #ffcdd2;
+  border-color: #ef9a9a;
+}
+
+.TodoItem.very-urgent:hover {
+  background-color: #ef9a9a;
+}
+
+.TodoItem.critical {
+  background-color: #ef9a9a;
+  border-color: #e57373;
+}
+
+.TodoItem.critical:hover {
+  background-color: #e57373;
+}
+
+.TodoItem.overdue {
+  background-color: #e57373;
+  border-color: #ef5350;
+  color: white;
+}
+
+.TodoItem.overdue:hover {
+  background-color: #ef5350;
+}
+
+.TodoItem.overdue .TodoText {
+  color: white;
+}
+
+.TodoItem.overdue .TodoDate-text {
+  color: #ffebee;
+}
+
+/* Indicador de urgencia */
+.urgency-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 2px 0 0 2px;
+}
+
+.urgency-indicator.urgent {
+  background-color: #ffcdd2;
+}
+
+.urgency-indicator.very-urgent {
+  background-color: #ef9a9a;
+}
+
+.urgency-indicator.critical {
+  background-color: #e57373;
+}
+
+.urgency-indicator.overdue {
+  background-color: #ef5350;
+}
+
+.TodoItem-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
 }
 
 .TodoText {
@@ -47,6 +126,28 @@
   margin-left: 10px;
 }
 
+.TodoItem-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Icon-edit {
+  position: relative;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Icon-edit::before {
+  content: '🖊️'; /* Edit icon */
+}
+
+.Icon-edit:hover::before {
+  content: '✍🏼'; /* Change the icon on hover */
+  color: #61dafa;
+}
+
 .Icon-delete {
   position: relative; /* Positioned absolutely within the relative container */
   right: -10px; /* Moves the icon to the right */
@@ -55,10 +156,10 @@
 }
 
 .Icon-delete::before {
-  content: "✖️"; /* Initial icon */
+  content: '✖️'; /* Initial icon */
 }
 
 .Icon-delete:hover::before {
-  content: "❌"; /* Change the icon on hover */
+  content: '❌'; /* Change the icon on hover */
   color: red; /* Add this if you want to change the color as well */
 }
